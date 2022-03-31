@@ -1,4 +1,4 @@
-package ioday03;
+package ioday02;
 
 import jdk.internal.util.xml.impl.Input;
 
