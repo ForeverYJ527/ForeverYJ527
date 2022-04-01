@@ -6,6 +6,10 @@ public class ThreadDemo1 {
         Thread t2 = new MyThread2();
         t1.run();
         t2.run();
+
+        System.out.println();
+        t1.start();//用线程的方式调用run方法
+        t2.start();
     }
 }
 
