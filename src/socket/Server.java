@@ -65,6 +65,13 @@ public class Server {
                 while ((line = br.readLine()) != null) {
                     System.out.println("客户端说：" + line);
                 }
+                OutputStream out=socket.getOutputStream();
+                OutputStreamWriter osw=new OutputStreamWriter(out,StandardCharsets.UTF_8);
+                BufferedWriter bw=new BufferedWriter(osw);
+                PrintWriter pw=new PrintWriter(bw,true);
+
+
+
             } catch (IOException e) {
                 //e.printStackTrace();
             } finally {
